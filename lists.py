@@ -16,3 +16,20 @@ for number in numberlist:
     total = total + number
 
 print (total)
+
+sum = 0
+average=0
+count = 0
+newlist = [500,555,577,588,22,599,600]
+for number in newlist:
+    sum = sum + number
+    if (count == 0):
+       min = number
+    elif (number < min):
+       min = number
+    count = count + 1
+
+average = sum / len(newlist)
+print (average)
+print (min)
+
